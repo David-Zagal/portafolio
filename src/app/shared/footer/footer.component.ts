@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { InfoPaginaService } from '../../services/info-pagina.service';
-import { InfoPagina } from '../../interfaces/info-pagina.interface';
 
 @Component({
   selector: 'app-footer',
