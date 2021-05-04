@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { InfoPagina } from '../interfaces/info-pagina.interface';
 import { map } from 'rxjs/operators';
-import { Equipo, EquipoModels } from '../interfaces/equipo.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -32,7 +31,6 @@ export class InfoPaginaService {
             .subscribe((resp: any[]) => {
               this.cargada = true;
               this.equipo = resp;
-              // console.log(resp);
             })
   }
 }
